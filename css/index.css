@@ -3,13 +3,15 @@
     padding: 0;
     margin: 0;
 }
-html {
-    height: 100%
-}
-body{
-    background-image: url("../img/azzy.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 100%;
+    animation: fadeIn 2s;
+    opacity: 0.8;
 }
 
 .header{
@@ -18,14 +20,18 @@ body{
     display: flex;
     justify-content: right;
     padding-right: 1rem;
-
+    opacity: 1;
+    background-color: rgb(119, 119, 119);
 }
+
 .main{
-    height: 47.7rem;
+    height: 48rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(119, 119, 119);
+    /* background-image: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, rgb(201, 230, 40) 100%); */
 }
 .box-btn{
     margin-top: 10rem ;
@@ -34,21 +40,76 @@ body{
     font-size: 2.5rem;
     color: rgb(218, 169, 129);
     box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    animation: fadeIn 2s;
+    opacity: 1;
+}
+.introduktion-container{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.introduktion{
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 5rem;
+font-size: 18px;
+font-weight: lighter;
+}
+.h{ 
+font-size: 30px;
+font-weight: 600;
+}
+.o{ 
+    font-size: 30px;
+    font-weight: 600;
+}
+.b{ 
+        font-size: 30px;
+        font-weight: bolder;
+}
+.test{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info{
+    text-align: center;
+    font-family:  cursive;
+padding: 2rem;
+}
+.icon{
+    width: 8vw;
 }
 
 h1{
     font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(218, 169, 129);
+    font-size: 2.5rem;
+    animation: fadeIn 2s;
+    opacity: 1;
 }
 h2{
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(218, 169, 129);
-}
-img{
-    width: 8vw;
+    animation: fadeIn 2s;
+    opacity: 1;
+    
 }
 li{
     color: white;
 }
 
+img{
+    width: 100%;
+}
 
-  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 0.8;
+    }
+  }
