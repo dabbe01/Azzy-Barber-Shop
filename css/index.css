@@ -4,6 +4,8 @@
     margin: 0;
 }
 
+
+
 .background{
     position: absolute;
     width: 100%;
@@ -14,14 +16,12 @@
     opacity: 0.8;
 }
 
-/* .header{
-    left: 87%;
-    width: 100%;
+.header{
+    display: flex;
     height: 3rem;
-    padding-right: 2rem;
-    opacity: 1;
-    background-color: rgb(119, 119, 119);
-} */
+    justify-content: right;
+    
+}
 
 .main{
     height: 48rem;
@@ -79,7 +79,7 @@ font-weight: 600;
 padding: 2rem;
 }
 .icon{
-    width: 20vw;
+    width: 9vw;
 }
 
 h1{
