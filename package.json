@@ -1,0 +1,19 @@
+{
+  "name": "azzy-barber-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabbe01/Azzy-Barber-Shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dabbe01/Azzy-Barber-Shop/issues"
+  },
+  "homepage": "https://github.com/dabbe01/Azzy-Barber-Shop#readme"
+}
